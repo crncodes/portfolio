@@ -129,7 +129,7 @@ textarea {
    }
 
    img {
-     width: 100%;
+     width: 75%;
    }
 
    figure {
@@ -142,7 +142,7 @@ textarea {
    }
 
    .divider {
-     border: solid 20px #3389a1;
+     border: solid 5px #3389a1;
    }
 
    /* Base Header-Footer Styles */
@@ -305,7 +305,7 @@ textarea {
 }
 
 .work h3 {
-  margin: 0;
+  padding-top: 10px;
 }
 
 .work p {
@@ -330,6 +330,10 @@ textarea {
   margin: 0;
 }
 
+.about h3 {
+  padding-top: 10px;
+}
+
 .about figure {
   margin: 20px 0;
 }
@@ -351,23 +355,7 @@ footer h3 {
   font-size: 2em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*==================== end of mobile-first design ==========================*/
 
 /* ==========================================================================
    Helper classes
@@ -456,10 +444,114 @@ footer h3 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/*======================= Tablet Design ===================================== */
+@media only screen and (min-width: 768px) {
+/* ====== General Styles ========= */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  h1 {
+    font-size: 5.5em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+  /* Header */
+
+  header .content-wrapper{
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+/* Divider */
+  .divider {
+    border-width: 30px;
+  }
+
+/* Work Section */
+
+  .work h3 {
+    font-size: 3.5em;
+  }
+
+  .work article {
+    width: 100%;
+  }
+
+  .workimg {
+    border-width: 10px;
+  }
+
+  .work p {
+    font-size: 2.5em;
+  }
+
+/* About Section */
+  .about h3 {
+    font-size: 3.5em;
+  }
+
+  .about figure {
+    padding-bottom: 15px;
+  }
+
+  .about-text {
+    padding-bottom: 50px;
+  }
+
+/* Footer */
+  footer .content-wrapper {
+    width: 60%;
+  }
+
+  footer h3 {
+    font-size: 3.5em;
+  }
+
+  .copyright p {
+    font-size: 1em;
+  }
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
