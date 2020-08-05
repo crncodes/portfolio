@@ -322,6 +322,7 @@ textarea {
 .about {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
   text-align: center;
 }
@@ -530,28 +531,95 @@ footer h3 {
   .copyright p {
     font-size: 1em;
   }
-
-
-
-
-
-
 }
 
+/* ==================== Desktop ==================== */
+@media only screen and (min-width: 1200px) {
+/* General Styles */
 
+  .content-wrapper {
+    max-width: 960px;
+  }
 
+  p {
+    font-size: 2em;
+  }
 
+  h1 {
+    font-size: 7em;
+  }
 
+  h3 {
+    font-size: 5em;
+  }
 
+  h4 {
+    font-size: 4em;
+  }
 
+  /* Dividers */
 
+  .divider {
+    border-width: 50px;
+  }
 
+  /* Work Section */
 
+  .work .work-items {
+    margin-bottom: 50px;
+  }
 
+  .work article {
+    flex-basis: 50%;
+  }
 
+  .workimg {
+    width: 90%;
+    border-width: 5px;
+  }
 
+  .work .description {
+    width: 100%;
+  }
 
+  /* About */
 
+  .about h3 {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .about article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .about article div {
+    width:50%;
+    }
+
+  .about-text{
+    text-align: right;
+  }
+
+  /* Footer */
+  footer h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-content{
+    width: 100%;
+  }
+
+  footer .social-icons {
+    justify-content: space-evenly;
+  }
+
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
